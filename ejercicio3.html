@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+  		body { 
+  			background-color: #8181F7;
+  			color: white;
+  			margin: auto;
+  			text-align: center;
+  		}
+  		b { 
+  			color: black;
+  			font-size: 35px;
+  		}
+	</style>
+</head>
+<body>
+	
+	<form id="frm1">
+		Nombre: <input type="text" name="name" id="name"><br>
+		Mail: <input type="text" name="email" id="email"><br>
+	</form> 
+	<button onclick="myFunction()">Mostrar</button>
+	<hr>
+	<p id="mostrarNombre"></p>
+	<p id="mostrarMail"></p>
+	<hr>
+	<script>
+
+		function myFunction() {
+			var inputEmail = document.getElementById('name').value;
+    		var inputPassword = document.getElementById('email').value;
+    		document.getElementById("mostrarNombre").innerHTML = "<b>" + inputEmail + "</b>";
+    		document.getElementById("mostrarMail").innerHTML = "<b>" + inputPassword + "</b>";
+			
+		}
+	</script>
+</body>
+</html>
